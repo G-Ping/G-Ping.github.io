@@ -6,43 +6,26 @@
 <script src="/h5/js/jquery.mobile-1.3.2.min.js"></script>
 <script>
 function get(s){
-    $.get("http://www.tuling123.com/openapi/api?key=d1b84061d45a487f9c1dbd6b505dcb7b&info="+encodeURI(s),function(data,status){
-    rs=data.text.replace(/\n/g,'<br>');
-    rs=rs.replace(/\r/g,'<br>');
-    rs=rs.replace(/\t/g,'<br>');
-    rs=rs.replace(/。”/g,'”<br>');
-    rs=rs.replace(/”。/g,'”<br>');
-    rs=rs.replace(/？”/g,'？”<br>');
-    rs=rs.replace(/”？/g,'”？<br>');
-    rs=rs.replace(/”。/g,'”<br>');
-    rs=rs.replace(/;/g,'<br>');
-    rs=rs.replace(/。/g,'，<br>');
-    rs=rs.replace(/\s/g,'');
-    document.getElementById("txtHint").innerHTML=rs;
+    str=encodeURI(s);
+    $.get("http://www.tuling123.com/openapi/api?key=d1b84061d45a487f9c1dbd6b505dcb7b&info="+str,function(data,status){
+    alert(data.text);
     });
 }
 </script>
 </head>
-
 <body>
-  <div data-role="header" data-position="fixed">   
-    <h1>lgprobot</h1>
+  <div data-role="header" data-position="fixed">    
+    <h1>欢迎访问</h1>
   </div>
+  <div data-role="content"> 
+     <ul data-role="listview">
+        <li><a href="#"    onclick="get('顺口溜')">顺口溜</a></li>
+        <li><a href="#"    onclick="get('绕口令')">绕口令</a></li>
+        <li><a href="#"    onclick="get('急转弯')">急转弯</a></li>
+        <li><a href="#"    onclick="get('笑话')">笑话</a></li>
+        <li><a href="#"    onclick="get('故事')">故事</a></li>
+        <li><a href="#"    onclick="get('天气')">天气</a></li>
+     </ul>   
+ </div>
 
-  <div data-role="content">
-    <div data-role="navbar">
-     <ul>
-        <li><button  value='顺口溜'onclick="get(this.value)">顺口溜</button></li>
-        <li><button  value='脑经急转弯'onclick="get(this.value)">脑经急转弯</button></li>
-        <li><button  value='绕口令'onclick="get(this.value)">绕口令</button></li>
-        <li><button id="xiaohua" value='笑话'onclick="get(this.value)">笑话</button></li>
-        <li><button id="gushi" value='故事'onclick="get(this.value)">故事</button></li>
-        <li><button id="nongli" value='九江天气'onclick="get(this.value)">天气</button></li>
-     </ul>
-    </div>
-    <br><br>
-    <span id="txtHint" ></span>
-   </div>
-
-  <div data-role="footer" data-position="fixed" > 
-  </div>
+ 
