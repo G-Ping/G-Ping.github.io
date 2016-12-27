@@ -25,41 +25,24 @@ function get(s){
 </head>
 
 <body>
-
-<div data-role="page" id="pageone">
-
-  <div data-role="header" data-position="fixed">
-     <a href="#pageone" data-role="button">首页</a>
-    <h1>欢迎访问</h1>
-    <div data-role="navbar">
- 
-    </div>
+  <div data-role="header" data-position="fixed">   
+    <h1>lgprobot</h1>
   </div>
 
   <div data-role="content">
-   <p>与lgprobot对话</p>
-    <input type="text" id="txt1" onchange="get(this.value)"></li>
-  <p>
-   <div>
-     <span id="txtHint" ></span>
-   </div>
- 
-    </div>
-  <div data-role="footer" data-position="fixed" >
-      <div data-role="collapsible-set">
-       <div data-role="collapsible">
-	
-      </div>
-     <div data-role="navbar">
-      <ul>
+    <div data-role="navbar">
+     <ul>
+        <li><button  value='顺口溜'onclick="get(this.value)">顺口溜</button></li>
         <li><button  value='脑经急转弯'onclick="get(this.value)">脑经急转弯</button></li>
         <li><button  value='绕口令'onclick="get(this.value)">绕口令</button></li>
         <li><button id="xiaohua" value='笑话'onclick="get(this.value)">笑话</button></li>
         <li><button id="gushi" value='故事'onclick="get(this.value)">故事</button></li>
-        <li><button id="tianqi" value='顺口溜'onclick="get(this.value)">顺口溜</button></li>
         <li><button id="nongli" value='九江天气'onclick="get(this.value)">天气</button></li>
      </ul>
     </div>
+    <br><br>
+    <span id="txtHint" ></span>
+   </div>
 
+  <div data-role="footer" data-position="fixed" > 
   </div>
-</div> 
