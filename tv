@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>TV-lgprobot </title>
+   <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+<div class="row clearfix">
+  <div class="col-md-12 column">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav ">
+              <li>
+                 <a href="http://www.ted.com/">Ted</a>
+              </li>
+              <li>
+                 <a href="http://open.163.com/">open163</a>
+              </li>
+              <li>
+                 <a href="http://mooc.guokr.com/course/">mooc</a>
+              </li>
+              <li>
+                 <a href="https://www.khanacademy.org/">kehan</a>
+              </li>
+              <li>
+                 <a href="http://www.icourses.cn/home/">icourses</a>
+              </li>
+              <li>
+                 <a href="http://opencla.cctv.com/">opencla</a>
+              </li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+             <a href="http://br.zgfj.cn/">般若文海</a>
+          </li>
+          <li>
+             <a href="http://www.xishange.org/">xishange--</a>
+          </li>
+         
+
+    </ul>
+    </div>
+    </nav>
+    <br><br>
+
+  </div>
+</div>
+<div class="row">
+
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <div class="caption">
+              <h1 class="text-center">
+                cctv1
+              </h1>
+              <p>
+                 <a class="btn btn-primary btn-block" href="http://tv.cctv.com/cctv1"> Action</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <div class="caption">
+              <h1 class="text-center">
+                cctv2
+              </h1>
+              <p>
+                 <a class="btn btn-primary btn-block" href="http://tv.cctv.com/cctv2"> Action</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+						<div class="caption">
+							<h1 class="text-center">
+								cctv3
+							</h1>
+              <p>
+                 <a class="btn btn-primary btn-block" href="http://tv.cctv.com/cctv3"> Action</a>
+              </p>
+						</div>
+					</div>
+				</div>
+</div>
+<div class="row">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<div class="caption">
+              <h1 class="text-center">
+                cctv6
+              </h1>
+              <p>
+                 <a class="btn btn-primary btn-block"  href="http://tv.cctv.com/cctv6"> Action</a>
+              </p>
+						</div>
+					</div>
+				</div>
+        <div class="col-md-4">
+					<div class="thumbnail">
+						<div class="caption">
+							<h1 class="text-center">
+								cctv9
+							</h1>
+              <p>
+                 <a class="btn btn-primary btn-block"  href="http://tv.cctv.com/cctv9"> Action</a>
+              </p>
+						</div>
+					</div>
+				</div>
+        <div class="col-md-4">
+					<div class="thumbnail">
+						<div class="caption">
+              <h1 class="text-center">
+                cctv10
+              </h1>
+              <p>
+                 <a  class="btn btn-primary btn-block"  href="http://tv.cctv.com/cctv10">Action</a>
+              </p>
+
+						</div>
+					</div>
+				</div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+        <h1 class="text-center">
+          cctv12
+        </h1>
+        <p>
+           <a class="btn btn-primary btn-block" href="http://tv.cctv.com/cctv12> Action</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <div class="caption">
+        <h1 class="text-center">
+          cctv14
+        </h1>
+        <p>
+           <a class="btn btn-primary btn-block"  href="http://tv.cctv.com/cctv14"> Action</a>
+        </p>
+
+
+      </div>
+    </div>
+  </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+						<div class="caption">
+							<h1 class="text-center">
+								cctv15
+							</h1>
+              <p>
+                 <a  class="btn btn-primary btn-block" href="http://tv.cctv.com/cctv15" >Action</a>
+              </p>
+						</div>
+					</div>
+				</div>
+
+</div>
