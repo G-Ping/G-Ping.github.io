@@ -143,6 +143,752 @@
 
 </div><div class="column_wrapper_xw">
 
+	  
+	<div class="column_wrapper_xw">
+	
+		<div class="column_wrapper_1000_xw" id="SUBD1460615216763202">
+			
+    <div id="SUBD1460615216763204" class="col_w592">
+        <div class="pdgwA151203_ind02">
+  <div id="pics_show" class="pics_show">
+
+    <div class="image" style="display:block;">
+		<a href="http://tv.cctv.com/lm/yjdk/index.shtml" target = "_blank"><img width="592" height="350" src="http://p1.img.cctvpic.com/photoAlbum/page/performance/img/2017/1/26/1485394557513_551.jpg" id="i_0" class="http://p1.img.cctvpic.com/photoAlbum/page/performance/img/2017/1/26/1485394557513_551.jpg" /></a>
+		<span class="text"></span>
+		<h3><a href="http://tv.cctv.com/lm/yjdk/index.shtml" target = "_blank">遇见大咖：零距离接触商界名家</a></h3>
+    </div>
+
+    <div class="image" style="display:none;">
+		<a href="http://jingji.cctv.com/special/live/zgjjnbjd/index.shtml" target = "_blank"><img width="592" height="350" src="http://p1.img.cctvpic.com/photoAlbum/page/performance/img/2017/1/20/1484875540011_875.jpg" id="i_0" class="http://p1.img.cctvpic.com/photoAlbum/page/performance/img/2017/1/20/1484875540011_875.jpg" /></a>
+		<span class="text"></span>
+		<h3><a href="http://jingji.cctv.com/special/live/zgjjnbjd/index.shtml" target = "_blank">中国经济晒“成绩单” 揭秘数字背后玄机</a></h3>
+    </div>
+
+    <div class="image" style="display:none;">
+		<a href="http://tv.cctv.com/2017/01/20/ARTIE4c3t0f1kNGw3aTfXO9R170120.shtml" target = "_blank"><img width="592" height="350" src="http://p1.img.cctvpic.com/photoAlbum/page/performance/img/2017/1/20/1484882173285_146.jpg" id="i_0" class="http://p1.img.cctvpic.com/photoAlbum/page/performance/img/2017/1/20/1484882173285_146.jpg" /></a>
+		<span class="text"></span>
+		<h3><a href="http://tv.cctv.com/2017/01/20/ARTIE4c3t0f1kNGw3aTfXO9R170120.shtml" target = "_blank">《跨界见真章》：告诉你一个真实的“总裁恺”</a></h3>
+    </div>
+
+    <div class="image" style="display:none;">
+		<a href="http://tv.cctv.com/lm/jkcf/index.shtml" target = "_blank"><img width="592" height="350" src="http://p1.img.cctvpic.com/photoAlbum/page/performance/img/2017/1/20/1484882289996_545.jpg" id="i_0" class="http://p1.img.cctvpic.com/photoAlbum/page/performance/img/2017/1/20/1484882289996_545.jpg" /></a>
+		<span class="text"></span>
+		<h3><a href="http://tv.cctv.com/lm/jkcf/index.shtml" target = "_blank">《极客出发》运动科技带来全新运动理念</a></h3>
+    </div>
+
+    <div class="change"><i></i><i></i><i></i><i></i></div>
+    <div class="arr_l"> <a href="javascript:;"> </a> </div>
+    <div class="arr_r"> <a href="javascript:;"> </a> </div>
+  </div>
+</div>
+<script type="text/javascript">
+<!--
+function pics_show(emId, delay) {
+var obj = jQuery("#" + emId),
+con = obj.find("div.image"),
+len = con.length - 1,
+lis = obj.find("div.change>i"),
+curr = 0,
+old = -1,
+timer = null;
+var arr_l = obj.find(".arr_l a");
+var arr_r = obj.find(".arr_r a");
+var begin = false;
+function roll(curr_) {
+  //con.css("display","none");
+  if (curr_ == old) {
+	return;
+  }
+  begin = true;
+  curr = curr_;
+  lis.removeClass("cur");
+  jQuery(lis[curr]).addClass("cur");
+  if (old > -1) {
+	jQuery(con[old]).css("z-index", "0").find(">span").css("display", "none");
+  }
+  jQuery(con[curr_]).find(">span").css("display", "block");
+  jQuery(con[curr_]).find("img").attr("src",
+  function() {
+	return this.className
+  });
+  jQuery(con[curr_]).css({
+	"display": "block",
+	"z-index": "998"
+  }).find("img").fadeIn("slow");
+  if (old > -1) {
+	jQuery(con[old]).find("img").css("display", "none");
+	jQuery(con[old]).css("display", "none");
+  }
+  old = curr;
+  begin = false;
+}
+arr_l.click(function() {
+  fnPause();
+  curr = fnPrev(curr);
+  roll(curr);
+  fnPlay();
+  return false;
+});
+arr_r.click(function() {
+  fnPause();
+  curr = fnNext(curr);
+  roll(curr);
+  fnPlay();
+  return false;
+});
+function fnPrev(curr_) {
+  var index = curr_;
+  index -= 1;
+  if (index < 0) index = len;
+  return index;
+}
+function fnNext(curr_) {
+  var index = curr_;
+  index += 1;
+  if (index > len) index = 0;
+  return index;
+}
+function fnGo() {
+  roll(fnNext(curr));
+}
+function fnPlay() {
+  timer = setInterval(fnGo, delay);
+}
+function fnPause() {
+
+  clearInterval(timer);
+}
+
+roll(curr);
+fnPlay();
+lis.each(function(i, li) {
+  jQuery(li).hover(function() {
+	if (begin) {
+	  return;
+	}
+	fnPause();
+	curr = i;
+	roll(curr);
+	//fnPlay();	
+  },
+  function() {})
+});
+obj.hover(function() {
+  fnPause();
+},
+function() {
+  fnPlay();
+})
+
+}
+
+new pics_show("pics_show", 5000);
+//-->
+</script>
+
+
+    </div>
+
+
+    <div id="SUBD1460615216763207" class="col_w388">
+        <div class="pdgwA151203_ind03_47">
+<a class="jmd" href="http://tv.cctv.com/epg/" target="_blank">节目单></a>
+  <ul class="ul_1">
+
+    <li class="li_cur">正在直播</li>
+
+    <li>访问排行</li>
+
+    <div class="clear"> </div>
+  </ul>
+  <div class="clear"> </div>
+  <div class="vo_nr" style="display:block;">
+    <div class="ul_2_nr">
+      <ul class="ul_2" style="left:-95px;">
+	  <!-- 时间表 -->
+      </ul>
+    </div>
+    <div class="clear"> </div>
+    <div class="ul_3_nr">
+      <ul class="ul_3">
+        <li class="ul_3_li">
+          <div class="ul_nr" id="ul_nr0">
+            <ul>
+            </ul>
+          </div>
+        </li>
+		<li class="ul_3_li">
+          <div class="ul_nr" id="ul_nr1">
+            <ul>
+            </ul>
+          </div>
+        </li>
+		<li class="ul_3_li">
+          <div class="ul_nr" id="ul_nr2">
+            <ul>
+            </ul>
+          </div>
+        </li>
+		<li class="ul_3_li">
+          <div class="ul_nr" id="ul_nr3">
+            <ul>
+            </ul>
+          </div>
+        </li>
+		<li class="ul_3_li">
+          <div class="ul_nr" id="ul_nr4">
+            <ul>
+            </ul>
+          </div>
+        </li>
+		<li class="ul_3_li">
+          <div class="ul_nr" id="ul_nr5">
+            <ul>
+            </ul>
+          </div>
+        </li>
+		<li class="ul_3_li">
+          <div class="ul_nr" id="ul_nr6">
+            <ul>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<script type="text/javascript">
+<!--
+	var zhibo="cctv2"
+
+	Date.prototype.Format = function (fmt) { //author: meizz 
+		var o = {
+			"M+": this.getMonth() + 1, //月份 
+			"d+": this.getDate(), //日 
+			"h+": this.getHours(), //小时 
+			"m+": this.getMinutes(), //分 
+			"s+": this.getSeconds(), //秒 
+			"q+": Math.floor((this.getMonth() + 3) / 3), //季度 
+			"S": this.getMilliseconds() //毫秒 
+		};
+		if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+		for (var k in o)
+		if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+		return fmt;
+	}
+	var now = new Date();
+	var nowStr = now.Format("yyyy/MM/dd");
+	var nowDate = new Date(nowStr);
+	var nowDateStr = now.Format("MM/dd");
+	var nowDates = now.Format("yyyyMMdd");
+
+	//初始化日期
+	function initDate(){
+		var html = '';		
+		//前3天
+		for(var i=3;i>0;i--){
+			html += '<li class="li_click_ts3"><span data='+new Date(nowDate.getTime() - 1000*60*60*24*i).Format("yyyyMMdd")+'>'+new Date(nowDate.getTime() - 1000*60*60*24*i).Format('MM月dd日')+'</span></li>';
+		}
+		//今天
+		html += '<li class="li_click_ts3" id="li2_cur"><span data='+nowDate.Format('yyyyMMdd')+'>今天</span></li>';
+		//后3天
+		for(var i=1;i<=3;i++){
+			html += '<li class="li_click_ts3"><span data='+new Date(nowDate.getTime() + 1000*60*60*24*i).Format('yyyyMMdd')+'>'+new Date(nowDate.getTime() + 1000*60*60*24*i).Format('MM月dd日')+'</span></li>';
+		}
+		html += '<div class="clear"></div>';
+		$(".ul_2").append(html);
+	}
+	initDate();
+
+	//获取数据
+	function getEpg(dateStr){
+		var paramDate =dateStr;
+		var url = 'http://api.cntv.cn/epg/epginfo?serviceId=tvcctv&c='+zhibo+'&d='+paramDate+'&cb=?&t=jsonp';
+		//alert(url);
+		$.getJSON(url,function(data){
+			
+			var pArray = new Array();
+			for(var key in data){
+				var programArray = data[key].program;
+				for(var i=0;i<programArray.length;i++){
+					pArray.push(programArray[i]);
+				}
+			}
+			pArray = sort(pArray);
+			var url_live="http://tv.cctv.com/live/"+zhibo;
+						
+			var datenew = paramDate.substr(0,4)+"-"+paramDate.substr(4,2)+"-"+paramDate.substr(6,2);
+			var html = '';
+			//未播			
+			if(now.Format("yyyyMMdd")<paramDate){
+				for(var i=0;i<pArray.length;i++){
+					html += '<li class="li_1"><span class="sp_1">'+pArray[i].showTime+'</span><a href!="" class="sp_4">未开始</a><a class="tit" href!="" title="'+pArray[i].t+'">'+pArray[i].t+'</a></li>';
+				}		
+			//已播
+			}else if(now.Format("yyyyMMdd")>paramDate){
+				for(var i=0;i<pArray.length;i++){
+					var url_back="http://tv.cctv.com/live/"+zhibo+"/index.shtml?stime="+pArray[i].st+"&etime="+pArray[i].et+"&type=lbacks";
+					html += '<li class="li_1"><span class="sp_1">'+pArray[i].showTime+'</span><a target="_blank" href="'+url_back+'" class="sp_2">回看</a><a class="tit" target="_blank" href="'+url_back+'" href="javascript:void(0)" title="'+pArray[i].t+'" starttime="'+pArray[i].st+'" endtime="'+pArray[i].et+'">'+pArray[i].t+'</a></li>';
+				}
+			//当天
+			}else{
+				var yiboArray = new Array();
+				var liveArray = new Array();
+				var weiboArray = new Array();
+				var nowLong = now.getTime()/1000;
+
+				for(var i=0;i<pArray.length;i++){
+					var st = pArray[i].st;
+					var et = pArray[i].et;
+					if(et < nowLong){
+						yiboArray.push(pArray[i]);
+					}else if(nowLong >= st && nowLong <= et){
+						liveArray.push(pArray[i]);
+					}else{
+						weiboArray.push(pArray[i]);
+					}
+				}
+				for(var i=0;i<yiboArray.length;i++){
+					var url_back="http://tv.cctv.com/live/"+zhibo+"/index.shtml?stime="+yiboArray[i].st+"&etime="+yiboArray[i].et+"&type=lbacks";
+					html += '<li class="li_1"><span class="sp_1">'+yiboArray[i].showTime+'</span><a target="_blank" href="'+url_back+'" class="sp_2">回看</a><a class="tit" target="_blank" href="'+url_back+'" title="'+yiboArray[i].t+'" starttime="'+yiboArray[i].st+'" endtime="'+yiboArray[i].et+'">'+yiboArray[i].t+'</a></li>';
+				}
+				for(var i=0;i<liveArray.length;i++){
+					html += '<li class="li_1"><span class="sp_1">'+liveArray[i].showTime+'</span><a target="_blank" href="'+url_live+'" class="sp_3">直播中</a><a class="tit" target="_blank" href="'+url_live+'" title="'+liveArray[i].t+'">'+liveArray[i].t+'</a></li>';
+				}
+				for(var i=0;i<weiboArray.length;i++){
+					html += '<li class="li_1"><span class="sp_1">'+weiboArray[i].showTime+'</span><a href!="" class="sp_4">未开始</a><a class="tit" href!="" title="'+weiboArray[i].t+'">'+weiboArray[i].t+'</a></li>';
+				}
+			}
+			
+			vio_il_2_li = ".pdgwA151203_ind03_47 .vo_nr .ul_2 li";
+			if(dateStr==nowDates){
+				var len = 0;
+				try{
+					len = yiboArray.length;
+				}
+				catch (e){
+					len = 0;
+				}
+
+				if(len>2){
+					$(vio_il_2_li).each(function(u) {
+						$("#ul_nr"+u).find("ul").html(html);
+						$("#ul_nr" + u).jscroll({
+						  W: "12px" //设置滚动条宽度
+						  ,BgUrl: "url(http://p1.img.cctvpic.com/photoAlbum/templet/common/DEPA1452668396471803/gd.jpg)"
+						  ,Bg: "-12px 0 repeat-y"
+						  ,Bar: {Pos: "down" //设置滚动条初始化位置在底部
+							,Bd: {Out: "#000",Hover: "none"} //设置滚动滚轴边框颜色：鼠标离开(默认)，经过
+							,Bg: {Out: "#000",Hover: "#fff",Focus: "orange"}} //设置滚动条滚轴背景：鼠标离开(默认)，经过，点击
+						  ,Btn: {btn: false //是否显示上下按钮 false为不显示
+							,uBg: {Out: "black",Hover: "#fff",Focus: "orange"} //设置上按钮背景：鼠标离开(默认)，经过，点击
+							,dBg: {Out: "black",Hover: "#fff",Focus: "orange"}} //设置下按钮背景：鼠标离开(默认)，经过，点击
+						  ,Fn: function() {} //滚动时候触发的方法
+						});
+					});
+					var showlen = weiboArray.length;
+					if(showlen>5){
+						var num = len-2;
+						var top = num*29;
+						var scrollTop = num*8;
+						$(".jscroll-c").css({"top":"-"+top+"px"});
+						$(".jscroll-h").css({"top":scrollTop+"px"});
+					}
+				}else{
+					$(vio_il_2_li).each(function(u) {
+						$("#ul_nr"+u).find("ul").html(html);
+						$("#ul_nr" + u).jscroll({
+						  W: "12px" //设置滚动条宽度
+						  ,BgUrl: "url(http://p1.img.cctvpic.com/photoAlbum/templet/common/DEPA1452668396471803/gd.jpg)"
+						  ,Bg: "-12px 0 repeat-y"
+						  ,Bar: {Pos: "up" //设置滚动条初始化位置在底部
+							,Bd: {Out: "#000",Hover: "none"} //设置滚动滚轴边框颜色：鼠标离开(默认)，经过
+							,Bg: {Out: "#000",Hover: "#fff",Focus: "orange"}} //设置滚动条滚轴背景：鼠标离开(默认)，经过，点击
+						  ,Btn: {btn: false //是否显示上下按钮 false为不显示
+							,uBg: {Out: "black",Hover: "#fff",Focus: "orange"} //设置上按钮背景：鼠标离开(默认)，经过，点击
+							,dBg: {Out: "black",Hover: "#fff",Focus: "orange"}} //设置下按钮背景：鼠标离开(默认)，经过，点击
+						  ,Fn: function() {} //滚动时候触发的方法
+						});
+					});
+				}
+			
+			}else{
+				$(vio_il_2_li).each(function(u) {
+					$("#ul_nr"+u).find("ul").html(html);
+					$("#ul_nr" + u).jscroll({
+					  W: "12px" //设置滚动条宽度
+					  ,BgUrl: "url(http://p1.img.cctvpic.com/photoAlbum/templet/common/DEPA1452668396471803/gd.jpg)"
+					  ,Bg: "-12px 0 repeat-y"
+					  ,Bar: {Pos: "up" //设置滚动条初始化位置在底部
+						,Bd: {Out: "#000",Hover: "none"} //设置滚动滚轴边框颜色：鼠标离开(默认)，经过
+						,Bg: {Out: "#000",Hover: "#fff",Focus: "orange"}} //设置滚动条滚轴背景：鼠标离开(默认)，经过，点击
+					  ,Btn: {btn: false //是否显示上下按钮 false为不显示
+						,uBg: {Out: "black",Hover: "#fff",Focus: "orange"} //设置上按钮背景：鼠标离开(默认)，经过，点击
+						,dBg: {Out: "black",Hover: "#fff",Focus: "orange"}} //设置下按钮背景：鼠标离开(默认)，经过，点击
+					  ,Fn: function() {} //滚动时候触发的方法
+					});
+				});
+			}
+
+			
+			
+		});
+	}
+	getEpg(nowDates);
+
+	//排序
+	function sort(pArray){
+		for(var i=0;i<pArray.length;i++){
+			for(var j=0;j<pArray.length;j++){
+				if(pArray[i].st<pArray[j].st){
+					var temp = pArray[i];
+					pArray[i] = pArray[j];
+					pArray[j] = temp;
+				}
+			}
+		}
+		return pArray;
+	}
+
+//-->
+</script>
+  <div class="vo_nr" style="background:none;">
+			<div class="text">
+                    <ul>
+
+                      <li class="cur">
+                        <div class="textq">
+                          <table cellspacing="0" cellpadding="0" border="0">
+                            <colgroup>
+                            <col width="21">
+                            <col width="346">
+                            <col width="9">
+                            </colgroup>
+                            <tbody><tr>
+                              <td><i>1</i></td>
+                              <td><a href="http://tv.cctv.com/2017/01/22/VIDEpIsNbDZDjac5eTYkUbbw170122.shtml" target="_blank">爬楼梯会损伤膝盖 是真的吗</a></td>
+                              <td align="right" class="zoushi001"></td>
+                            </tr>
+                          </tbody></table>
+                        </div>
+                      </li>
+
+                      <li class="cur">
+                        <div class="textq">
+                          <table cellspacing="0" cellpadding="0" border="0">
+                            <colgroup>
+                            <col width="21">
+                            <col width="346">
+                            <col width="9">
+                            </colgroup>
+                            <tbody><tr>
+                              <td><i>2</i></td>
+                              <td><a href="http://tv.cctv.com/2017/01/22/VIDEeGEI0k4InX49zPyyXLwd170122.shtml" target="_blank">哪些城市的人们更爱运动？</a></td>
+                              <td align="right" class="zoushi001"></td>
+                            </tr>
+                          </tbody></table>
+                        </div>
+                      </li>
+
+                      <li class="cur">
+                        <div class="textq">
+                          <table cellspacing="0" cellpadding="0" border="0">
+                            <colgroup>
+                            <col width="21">
+                            <col width="346">
+                            <col width="9">
+                            </colgroup>
+                            <tbody><tr>
+                              <td><i>3</i></td>
+                              <td><a href="http://tv.cctv.com/2017/01/22/VIDEEE0aRCTujAsGPtiwXZIA170122.shtml" target="_blank">经济生活大调查：居民出行习惯</a></td>
+                              <td align="right" class="zoushi003"></td>
+                            </tr>
+                          </tbody></table>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="textq">
+                          <table cellspacing="0" cellpadding="0" border="0">
+                            <colgroup>
+                            <col width="21">
+                            <col width="346">
+                            <col width="9">
+                            </colgroup>
+                            <tbody><tr>
+                              <td><i>4</i></td>
+                              <td><a href="http://tv.cctv.com/2017/01/23/VIDElzrTmJOMHiJeK6fdvGtz170123.shtml" target="_blank">对话达沃斯：全球复苏的中国角色</a></td>
+                              <td align="right" class="zoushi001"></td>
+                            </tr>
+                          </tbody></table>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="textq">
+                          <table cellspacing="0" cellpadding="0" border="0">
+                            <colgroup>
+                            <col width="21">
+                            <col width="346">
+                            <col width="9">
+                            </colgroup>
+                            <tbody><tr>
+                              <td><i>5</i></td>
+                              <td><a href="http://tv.cctv.com/2017/01/23/VIDEPMmkSZqfIiE5AYbm9dxD170123.shtml" target="_blank">专家：养老金入市不等于入股市</a></td>
+                              <td align="right" class="zoushi002"></td>
+                            </tr>
+                          </tbody></table>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="textq">
+                          <table cellspacing="0" cellpadding="0" border="0">
+                            <colgroup>
+                            <col width="21">
+                            <col width="346">
+                            <col width="9">
+                            </colgroup>
+                            <tbody><tr>
+                              <td><i>6</i></td>
+                              <td><a href="http://tv.cctv.com/2017/01/23/VIDELrY8o0YitcEuEFjim6R9170123.shtml" target="_blank">多平台推抢票服务 加就能买到票？</a></td>
+                              <td align="right" class="zoushi001"></td>
+                            </tr>
+                          </tbody></table>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="textq">
+                          <table cellspacing="0" cellpadding="0" border="0">
+                            <colgroup>
+                            <col width="21">
+                            <col width="346">
+                            <col width="9">
+                            </colgroup>
+                            <tbody><tr>
+                              <td><i>7</i></td>
+                              <td><a href="http://tv.cctv.com/2017/01/23/VIDEt11gN05Btv9GR0z9nr50170123.shtml" target="_blank">春运进行时·说说心里话</a></td>
+                              <td align="right" class="zoushi002"></td>
+                            </tr>
+                          </tbody></table>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="textq">
+                          <table cellspacing="0" cellpadding="0" border="0">
+                            <colgroup>
+                            <col width="21">
+                            <col width="346">
+                            <col width="9">
+                            </colgroup>
+                            <tbody><tr>
+                              <td><i>8</i></td>
+                              <td><a href="http://tv.cctv.com/2017/01/23/VIDEbIVpg8eTPkukgJTE0kVf170123.shtml" target="_blank">《年味儿》北京——腊八粥 腊八蒜</a></td>
+                              <td align="right" class="zoushi003"></td>
+                            </tr>
+                          </tbody></table>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="textq">
+                          <table cellspacing="0" cellpadding="0" border="0">
+                            <colgroup>
+                            <col width="21">
+                            <col width="346">
+                            <col width="9">
+                            </colgroup>
+                            <tbody><tr>
+                              <td><i>9</i></td>
+                              <td><a href="http://tv.cctv.com/2017/01/23/VIDEyempswaFLMLo3XT3Ehnr170123.shtml" target="_blank">经济生活大调查：创业</a></td>
+                              <td align="right" class="zoushi003"></td>
+                            </tr>
+                          </tbody></table>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="textq">
+                          <table cellspacing="0" cellpadding="0" border="0">
+                            <colgroup>
+                            <col width="21">
+                            <col width="346">
+                            <col width="9">
+                            </colgroup>
+                            <tbody><tr>
+                              <td><i>10</i></td>
+                              <td><a href="http://tv.cctv.com/2017/01/23/VIDEFfnEe7vxcCtF9h1RdGfR170123.shtml" target="_blank">“旅游预售卡”真便宜还是假实惠？</a></td>
+                              <td align="right" class="zoushi001"></td>
+                            </tr>
+                          </tbody></table>
+                        </div>
+                      </li>
+
+<div class="clear"></div>
+                     </ul>
+            </div>
+    </div>
+
+  <div class="clear"> </div>
+</div>
+<script type="text/javascript" src="http://p1.img.cctvpic.com/photoAlbum/templet/common/DEPA1452668396471803/jscroll_160113.js"></script>
+<script type="text/javascript">
+<!--
+  vio_ul_1_li = ".pdgwA151203_ind03_47 .ul_1 li";
+  vo_nr = ".pdgwA151203_ind03_47 .vo_nr";
+
+  $(vio_ul_1_li).mouseenter(function() {
+
+	$(vio_ul_1_li).attr("class", "");
+	$(this).attr("class", "li_cur");
+	$(vio_ul_1_li).each(function(q) {
+	  if ($(this).attr("class") == "li_cur") {
+		$(vo_nr).hide();
+		$(vo_nr).eq(q).show();
+		return false;
+	  }
+
+	});
+
+  });
+
+  $(vio_ul_1_li).mouseleave(function() {});
+
+  vio_il_2_li = ".pdgwA151203_ind03_47 .vo_nr .ul_2 li";
+  vio_ul_nr = ".pdgwA151203_ind03_47 .ul_nr";
+
+
+
+  //右侧日期脚本
+  ul_2_li_size = $(".pdgwA151203_ind03_47 .vo_nr .ul_2 li").size();
+  video_ul = $(".pdgwA151203_ind03_47 .vo_nr .ul_2");
+  $(video_ul).css("width", ul_2_li_size * 83);
+
+  ul3 = ".pdgwA151203_ind03_47 .vo_nr .ul_3_nr .ul_3";
+  ul3_li = ".pdgwA151203_ind03_47 .vo_nr .ul_3_nr .ul_3 li";
+  ul3_li_size = $(ul3_li).size();
+  ul3_width = ul3_li_size * 385;
+  $(ul3).css("width", ul3_width);
+
+
+  $(".li_click_ts3").click(function() {
+	getEpg($(this).find('span').attr('data'));
+	$(vio_il_2_li).attr("id", "");
+	$(this).attr("id", "li2_cur");
+	$(vio_il_2_li).each(function(p) {
+	  if ($(this).attr("id") == "li2_cur") {
+		$(".jscroll-h").css("top", "0px");
+		$(".jscroll-c").css("top", "0px");
+		//pd_p=p+1;
+		pd_p = parseInt(p) + 1;
+		yd_p = pd_p - 2;
+
+		if (p == 0) {
+		  $("#li2_cur span").css("padding-left", 0);
+		  $("#li2_cur span").css("padding-right", 0);
+		  $("#li2_cur span").css("width", "0");
+		  $(".pdgwA151203_ind03_47 .vo_nr .ul_2:not(:animated)").animate({
+			"left": 0 + "px"
+		  },
+		  function() {
+
+			$("#li2_cur span:not(:animated)").animate({
+			  "width": 62 + "px",
+			  "paddingLeft": 0 + "px",
+			  "paddingRight": 0 + "px"
+			});
+
+		  });
+
+		  $(".pdgwA151203_ind03_47 .vo_nr .ul_3_nr .ul_3:not(:animated)").animate({
+			"left": -((p) * 385) + "px"
+		  });
+		  return false;
+
+		} else if (p < 2) {
+		  $("#li2_cur span").css("padding-left", 0);
+		  $("#li2_cur span").css("padding-right", 0);
+		  $("#li2_cur span").css("width", "0");
+		  $(".pdgwA151203_ind03_47 .vo_nr .ul_2:not(:animated)").animate({
+			"left": 0 + "px"
+		  },
+		  function() {
+
+			$("#li2_cur span:not(:animated)").animate({
+			  "width": 62 + "px",
+			  "paddingLeft": 0 + "px",
+			  "paddingRight": 0 + "px"
+			});
+
+		  });
+
+		  $(".pdgwA151203_ind03_47 .vo_nr .ul_3_nr .ul_3:not(:animated)").animate({
+			"left": -((p) * 385) + "px"
+		  });
+		  return false;
+
+		} else if (p > (ul_2_li_size - 3)) {
+
+		  return false;
+		} else {
+		  $("#li2_cur span").css("width", "0");
+		  $("#li2_cur span").css("padding-left", 0);
+		  $("#li2_cur span").css("padding-right", 0);
+
+		  $(".pdgwA151203_ind03_47 .vo_nr .ul_2:not(:animated)").animate({
+			"left": -(yd_p * 83) + "px"
+		  },
+		  function() {
+			$("#li2_cur span:not(:animated)").animate({
+			  "width": 62 + "px",
+			  "paddingLeft": 0 + "px",
+			  "paddingRight": 0 + "px"
+			});
+		  });
+
+		  $(".pdgwA151203_ind03_47 .vo_nr .ul_3_nr .ul_3:not(:animated)").animate({
+			"left": -((p) * 385) + "px"
+		  });
+		}
+	  }
+	});
+	return false;
+  });
+
+  ul_3 = ".pdgwA151203_ind03_47 .vo_nr .ul_3_nr";
+  ul_3_li = ".pdgwA151203_ind03_47 .ul_nr ul li";
+
+  $(ul_3_li).mouseenter(function() {
+
+	$(ul_3_li).find(".i_ts").stop().animate({
+	  "width": 0 + "px"
+	},
+	100);
+	$(this).find(".i_ts").stop().animate({
+	  "width": 70 + "px"
+	},
+	300);
+  });
+
+  $(ul_3).mouseleave(function() {
+
+	$(ul_3_li).find(".i_ts").stop().animate({
+	  "width": 0 + "px"
+	},
+	100);
+  });
+  $(".pdgwA151203_ind03_47 .ul_nr ul .li_1").click(function() {
+	return false;
+  });
+//-->
+</script>
+    </div>
+
+<div style="clear:both;display:block;font-size:0;height:0;line-height:0;visibility:hidden;"></div>
+		</div>
+  
+	  
 		<div class="column_wrapper_1000_xw" id="SUBD1462351085403394">
 
 
