@@ -12,10 +12,10 @@
 function get(s){
     if (s==='咨询'){s=prompt("请输入", "九江天气")};
     str=encodeURI(s);
-	//url="http://www.tuling123.com/openapi/api?key=d1b84061d45a487f9c1dbd6b505dcb7b&info="+str;
-	//window.location.href=url;
-    $.get("http://www.tuling123.com/openapi/api?key=d1b84061d45a487f9c1dbd6b505dcb7b&info="+str,function(data,status){
-    alert(data.text);
+	url="http://www.tuling123.com/openapi/api?key=d1b84061d45a487f9c1dbd6b505dcb7b&info="+str;
+	window.location.href=url;
+ //   $.get("http://www.tuling123.com/openapi/api?key=d1b84061d45a487f9c1dbd6b505dcb7b&info="+str,function(data,status){
+//    alert(data.text);
     });
 }
 </script>
