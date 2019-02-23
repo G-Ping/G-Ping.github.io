@@ -1,26 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script src=url(js/jquery-1.8.3.min.js)></script>
+<head>   <meta charset="utf-8">
+   <title>AI-lgprobot </title>   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 <script>
-$(document).ready(function(){
-  $("button").click(function(){
-    str=encodeURI(this.value);
-    $.get("http://www.tuling123.com/openapi/api?key=d1b84061d45a487f9c1dbd6b505dcb7b&info="+str,function(data,status){
-      document.getElementById("txtHint").innerHTML=data.text;
+function get(s){
+    if (s===''){s=prompt("请输入", "")};
+    str=encodeURI(s);
+    url="http://www.tuling123.com/openapi/api?key=d1b84061d45a487f9c1dbd6b505dcb7b&info="+str;
+	window.location.href=url;
+    //$.get("http://www.tuling123.com/openapi/api?key=d1b84061d45a487f9c1dbd6b505dcb7b&inf="+str,function(data,status){
+    //alert("resut",data);
     });
-  });
-});
+}
 </script>
-</head>
-<body>
-<p>与lgprobot对话</p>
-<input type="text" id="txt1"
-onchange='$("#1").attr("value",this.value);'>
-<button id='1' value='你好'>发送</button>
-<p>
-<div>
-<span id="txtHint" ></span>
+</head><body>
+<div class="container">
+<div class="row clearfix">  <div class="col-md-12 column">
+    
+    
+
+  </div>
 </div>
-</body>
-</html>
+<div class="row">
+
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <div class="caption">
+              <h1 class="text-center">
+                <a href="https://g-ping.github.io/h5/tv"> 看电视</a>
+              </h1>
+              <p>
+                 <a class="btn btn-primary btn-block" href="https://g-ping.github.io/h5/tv"> Action</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <div class="caption">
+              <h1 class="text-center">
+                <a href="https://g-ping.github.io/h5/mv"> 听音乐</a>
+              </h1>
+              <p>
+                 <a class="btn btn-primary btn-block" href="https://g-ping.github.io/h5/mv"> Action</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+						<div class="caption">
+							<h1 class="text-center">
+								<a  href="http://www.fodizi.com/fofa/5_1.htm"> 卡通</a>
+							</h1>
+              <p>
+                 <a class="btn btn-primary btn-block" href="http://www.fodizi.com/fofa/5_1.htm
+"> Action</a>
+              </p>
+						</div>
+					</div>
+				</div>
+	</div>
+
